@@ -10,7 +10,7 @@ add_subdirectory(glimac)
 
 # Create a target
 function(setup_project PROJECT_NAME)
-    set(TARGET_NAME ${PROJECT_NAME})
+    set(TARGET_NAME ${PROJECT_NAME}_exe)
     add_executable(${TARGET_NAME})
     target_compile_features(${TARGET_NAME} PRIVATE cxx_std_11)
 
